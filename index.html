@@ -1,0 +1,83 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSYK</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>MUSYK Music Player</h1>
+    </header>
+
+    <div class="container">
+        <!-- Left Side: Playlists & Search -->
+        <div class="left-section">
+            <!-- Search Songs -->
+            <div class="box">
+                <h2>Search Songs</h2>
+                <input type="text" id="search-input" placeholder="Type a Song Name...">
+                <button id="search-button">Search</button>
+                <div id="search-results"></div>
+            </div>
+
+            <!-- My Playlists -->
+            <div class="box">
+                <h2>My Playlists</h2>
+                <input type="text" id="playlist-name-input" placeholder="Name your Playlist">
+                <button id="create-playlist-button">Create Playlist</button>
+                <div id="my-playlists"></div>
+            </div>
+
+            <!-- Public Playlists -->
+            <div class="box">
+                <h2>Public Playlists</h2>
+                <select id="public-playlist-dropdown">
+                    <option value="">Select a Public Playlist</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Right Side: Now Playing -->
+        <div class="right-section">
+            <h2>Now Playing</h2>
+            <img id="current-song-image" src="images/image2.jpg" alt="Song Image" />
+            <h3 id="current-song-title">Choose Song to Play</h3>
+            <p id="current-song-artist"></p>
+            <!-- Playback Controls -->
+            <div class="controls">
+                <button id="previous-button">Previous</button>
+                <button id="play-button">Play</button>
+                <button id="pause-button">Pause</button>
+                <button id="next-button">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Shareable Link Container -->
+    <div id="share-container" style="display: none;">
+        <p>Share this playlist:</p>
+        <input type="text" id="share-link" readonly>
+        <button onclick="copyLink()">Copy Link</button>
+        <br>
+        <a href="#" target="_blank">Share on Twitter</a>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
